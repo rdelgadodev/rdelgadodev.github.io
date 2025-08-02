@@ -4,7 +4,7 @@
 
 
 /* Estilos Generales */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,331 +13,169 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f7f6; /* Un gris claro suave */
-    color: #333;
+    background-color: #121212;
+    color: #E0E0E0;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #2c3e50; /* Azul oscuro */
+    color: #F0F0F0;
 }
 
-a {
-    color: #3498db; /* Azul */
-    text-decoration: none;
+section{
+    margin-bottom: 10rem;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
-section {
-    padding: 60px 20px;
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-/* CABECERA Y NAVEGACIÓN */
-header {
-    background-color: #2c3e50; /* Azul oscuro */
-    color: white;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-nav {
+/* Header */
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 40px; /* Tamaño del logo */
-    margin-right: 10px;
-    border-radius: 50%; /* Si quieres que sea circular */
-}
-
-nav h1 {
-    margin: 0;
-    font-size: 1.8em;
-    color: white;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 25px;
-}
-
-nav ul li a {
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #3498db; /* Azul al pasar el ratón */
-    text-decoration: none;
-}
-
-/* SECCIÓN HERO */
-.hero {
-    background-color: #3498db; /* Azul brillante */
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px; /* Altura mínima */
-}
-
-.hero-content h1 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.hero-content h2 {
-    font-size: 2.5em;
-    margin-top: 0;
-    color: white;
-}
-
-.hero-content p {
-    font-size: 1.3em;
-    margin-bottom: 30px;
-    opacity: 0.9;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #2c3e50; /* Azul oscuro */
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin: 10px;
-}
-
-.btn:hover {
-    background-color: #1a242f; /* Azul más oscuro */
-    transform: translateY(-2px);
-    text-decoration: none;
-}
-
-.secondary-btn {
-    background-color: transparent;
-    border: 2px solid white;
-}
-
-.secondary-btn:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-color: white;
-}
-
-/* SECCIONES GENERALES */
-.about, .projects, .contact {
-    background-color: white;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-}
-
-.about h2, .projects h2, .contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
     position: relative;
-    display: inline-block;
-}
-
-.about h2::after, .projects h2::after, .contact h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #3498db;
-    margin: 10px auto 0;
-}
-
-.about p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    text-align: left;
-}
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.skills-list li {
-    background-color: #ecf0f1; /* Gris claro */
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    color: #555;
-    font-size: 0.9em;
-}
-
-/* SECCIÓN DE PROYECTOS */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.project-card {
-    background-color: #fdfdfd;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     overflow: hidden;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img{
+    width: 80px;
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+
+.menu-toggle{
+    background-color: #121212;
+    border: none;
+    padding: 0.5rem; 
+}
+
+.menu-toggle span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 0.5rem;
+    background-color: #FFA500;
+   transition: all 0.5s ease-in-out;
+}
+
+.menu{
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+    bottom: 50%;
+    transform: translateY(50%);
     display: flex;
-    flex-direction: column;
+    transition: all 0.5s ease-in-out;  
 }
 
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+.is_visible{
+    right: 15% !important;
+    opacity: 1 !important;
 }
 
-.project-card img {
-    width: 100%;
-    height: 200px; /* Altura fija para las imágenes */
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
+.menu li{
+    list-style: none;
+    margin: 0 0.2rem;  
 }
 
-.project-card h3 {
-    font-size: 1.6em;
-    margin: 20px 20px 10px;
-    color: #2c3e50;
-}
-
-.project-card p {
-    font-size: 1em;
-    margin: 0 20px 20px;
-    color: #555;
-    flex-grow: 1; /* Para que la descripción ocupe el espacio disponible */
-}
-
-.project-links {
-    padding: 0 20px 20px;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.btn-project {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ecf0f1;
-    color: #2c3e50;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 0.9em;
-    transition: background-color 0.3s ease;
-}
-
-.btn-project i {
-    margin-right: 8px;
-}
-
-.btn-project:hover {
-    background-color: #dbe4e6;
+.menu a {
+    color: #FFA500;
     text-decoration: none;
 }
 
-.btn-project.primary-btn {
-    background-color: #3498db;
-    color: white;
+/* Main */
+.hero{
+    text-align: center;
 }
 
-.btn-project.primary-btn:hover {
-    background-color: #2980b9;
+
+.img-perfil{
+    width: 150px;
+    border: 0.2rem solid #FFA500;
+    border-radius: 50%;
 }
 
-/* SECCIÓN DE CONTACTO */
-.contact-info {
-    font-size: 1.1em;
-    margin-top: 30px;
+.hero p{
+    margin: 2rem 0;
 }
 
-.contact-info p {
-    margin: 10px 0;
+.btn{
+    padding: 0.5rem;
+    border: 0.2rem solid #FFA500;
+    background-color: #FFA500;
+    color: #121212;
+    text-decoration: none; 
+    border-radius: 2rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #121212;
+    color:#FFA500;
+}
+
+.title-section{
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    margin-bottom: 2rem;
 }
 
-.contact-info a {
-    font-weight: bold;
+.title-section span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 0.5rem;
+    background-color: #FFA500;
 }
 
-/* PIE DE PÁGINA */
-footer {
-    background-color: #2c3e50;
-    color: white;
+.about p{
+    margin: 0.5rem;
+}
+
+.about h3{
     text-align: center;
-    padding: 25px 20px;
-    font-size: 0.9em;
+    margin: 1.5rem 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-    nav ul {
-        margin-top: 15px;
-        justify-content: center;
-    }
-    nav ul li {
-        margin: 0 10px;
-    }
-    .hero-content h1 {
-        font-size: 2.5em;
-    }
-    .hero-content h2 {
-        font-size: 1.8em;
-    }
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-    .project-card {
-        margin-bottom: 20px;
-    }
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+    margin: 0.8rem;
+}
+
+.skills-list li{
+    list-style: none;
+    padding: 0.5rem;
+    background-color: #FFA500;
+    border-radius: 2rem;
+    color: #121212;
+}
+
+.projects-grid{
+    margin: 0 0.5rem;
+}
+
+.project-card{
+    margin: 2rem 0;
+    border: 0.2rem solid #FFA500;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+
+}
+
+.project-card img{
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.project-links a{
+
+
 }

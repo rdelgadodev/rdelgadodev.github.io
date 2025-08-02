@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,45 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
     <header>
+        <div class="logo">
+            <img src="imgs/RDM_logo.png" alt="Logo de Raúl Delgado Molina">
+        </div>
         <nav>
-            <div class="logo">
-                <img src="imgs/RDM_logo.png" alt="Logo de Raúl Delgado Molina"> <h1>Raúl Delgado Molina</h1>
-            </div>
-            <ul>
+            <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <button class="menu-toggle" data-menu-open="false"><span></span><span></span><span></span></button>
+
+
     </header>
 
     <main>
         <section id="inicio" class="hero">
             <div class="hero-content">
-                <h2>Hola, soy Raúl,</h2>
+                <img src="imgs/FP.png" alt="Foto de perfil" class="img-perfil">
+                <h2>👋 Hola, soy Raúl,</h2>
                 <h1>Desarrollador Web</h1>
                 <p>De la logística al código, transformando ideas en experiencias digitales.</p>
-                <a href="#proyectos" class="btn">Ver Proyectos</a>
-                <a href="#contacto" class="btn secondary-btn">Contactar</a>
+               <div>
+                 <a href="#proyectos" class="btn">Ver Proyectos</a>
+                 <a href="#contacto" class="btn">Contactar</a>
+               </div>
             </div>
         </section>
-
+    
+ 
         <section id="sobre-mi" class="about">
-            <h2>Sobre Mí</h2>
+            <div class="title-section">
+            <span></span><h2>Sobre mí</h2><span></span>
+            </div>
             <p>Después de varios años dedicado al sector postal, decidí dar un giro profesional radical, atraído por el dinamismo y el impacto transformador de la tecnología en el mundo. Me sumergí de lleno en la programación, comenzando mi viaje con <strong>Python</strong> y el framework <strong>Django</strong>. Esta etapa me permitió construir una base sólida en los fundamentos del desarrollo backend y la lógica de programación.</p>
             <p>Poco después, mi interés me llevó a explorar el desarrollo web front-end. Realicé un curso especializado en confección y publicación de páginas web, donde adquirí conocimientos profundos en <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>. Fue aquí donde descubrí mi verdadera pasión: construir interfaces interactivas, dar vida a las páginas web con efectos visuales y dotarlas de dinamismo. Me entusiasma la idea de transformar conceptos en experiencias digitales atractivas y funcionales.</p>
             <p>Actualmente, estoy buscando mi primera oportunidad profesional como <strong>Desarrollador Web (Front-end o Full-stack)</strong> para aplicar y expandir mis conocimientos en un entorno colaborativo. Estoy comprometido con el aprendizaje continuo y la creación de soluciones web innovadoras.</p>
@@ -52,8 +63,10 @@
             </ul>
         </section>
 
-        <section id="proyectos" class="projects">
-            <h2>Mis Proyectos</h2>
+       <section id="proyectos" class="projects">
+        <div class="title-section">
+            <span></span><h2>Mis proyectos</h2><span></span>
+            </div>
             <div class="projects-grid">
                 <article class="project-card">
                     <img src="images/weekfoods.png" alt="Captura de pantalla de WeekFoods"> <h3>🥗 WeekFoods: Planificador Semanal de Comidas</h3>
@@ -61,7 +74,7 @@
                     <div class="project-links">
                         <a href="https://github.com/rdelgadodev/WeekFoods" target="_blank" class="btn-project">Código <i class="fab fa-github"></i></a>
                         <!-- <a href="weekfoods.html" target="_blank" class="btn-project primary-btn">Ver Demo</a> </div> -->
-                </article>
+   </article>
 
                 <article class="project-card">
                     <img src="imgs/Imagen_Amigos_en_Ruta.png" alt="Captura de pantalla de Amigos en Ruta"> <h3>✈️ Amigos en Ruta: Agencia de Viajes</h3>
@@ -75,10 +88,10 @@
                     
                     <img src="imgs/Imagen_Centro_Formatic.png" alt="Captura de pantalla de Forma-TIC">
                     <h3>🎓 Forma-TIC: Centro de Formación</h3> 
-                    <p>Página web de un centro de formación tecnológica con un catálogo de cursos interactivo por categorías, información del centro y galería. Demuestra habilidades en maquetación responsiva con HTML, CSS y JavaScript.</p>
+                    <p>Página web de un centro de formación tecnológica con un catálogo de cursos interactivo por categorías, información del centro y galería. Desarrollado de manera responsiva con HTML, CSS y JavaScript.</p>
                     <div class="project-links">
-                        <a href="https://github.com/rdelgadodev/Forma-TIC" target="_blank" class="btn-project">Código <i class="fab fa-github"></i></a>
-                        <a href="https://rdelgadodev.github.io/Centro-Formatic/" target="_blank" class="btn-project primary-btn">Ver Demo</a> </div>
+                        <a href="https://github.com/rdelgadodev/Forma-TIC" target="_blank" class="btn">Código <i class="fab fa-github"></i></a>
+                        <a href="https://rdelgadodev.github.io/Centro-Formatic/" target="_blank" class="btn">Ver Demo</a> </div>
                 </article>
 
                 <article class="project-card">
@@ -91,7 +104,7 @@
             </div>
         </section>
 
-        <section id="contacto" class="contact">
+        <!-- <section id="contacto" class="contact">
             <h2>Contacto</h2>
             <p>¿Interesado en colaborar o tienes alguna pregunta? ¡No dudes en contactarme!</p>
             <div class="contact-info">
@@ -99,13 +112,14 @@
                 <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/rdelgadomolina" target="_blank">Raúl Delgado Molina</a></p>
                 <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/rdelgadodev" target="_blank">rdelgadodev</a></p>
                 </div>
-        </section>
+        </section> -->
     </main>
 
     <footer>
         <p>&copy; 2024 Raúl Delgado Molina. Todos los derechos reservados.</p>
-    </footer>
+    </footer> 
 
     <script src="script.js"></script>
 </body>
+
 </html>
