@@ -3,7 +3,7 @@
 
 
 
-/* Estilos Generales */
+/* ---------------- Estilos Generales ---------------- */
 * {
     margin: 0;
     padding: 0;
@@ -26,11 +26,11 @@ h3 {
 }
 
 section{
-    margin-bottom: 10rem;
+    margin: 0 0.5rem 10rem;
 }
 
 
-/* Header */
+/* ---------------- Header ---------------- */
 header{
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@ header{
     height: 3px;
     margin: 0.5rem;
     background-color: #FFA500;
-   transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .menu{
@@ -85,11 +85,13 @@ header{
     text-decoration: none;
 }
 
-/* Main */
+/* ---------------- Main ---------------- */
+
+/*Section Hero*/
 .hero{
     text-align: center;
+    padding-bottom: 2rem;
 }
-
 
 .img-perfil{
     width: 150px;
@@ -97,8 +99,12 @@ header{
     border-radius: 50%;
 }
 
-.hero p{
+.hero-content p{
     margin: 2rem 0;
+}
+
+.hero-content .btn{
+    margin: 0 0.5rem;
 }
 
 .btn{
@@ -108,7 +114,6 @@ header{
     color: #121212;
     text-decoration: none; 
     border-radius: 2rem;
-    margin: 0 0.5rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -133,8 +138,9 @@ header{
     background-color: #FFA500;
 }
 
-.about p{
-    margin: 0.5rem;
+/*Section About me*/
+.about p {
+    margin: 1rem 0;
 }
 
 .about h3{
@@ -158,16 +164,15 @@ header{
     color: #121212;
 }
 
-.projects-grid{
-    margin: 0 0.5rem;
-}
-
-.project-card{
+/*Section Proyectos*/
+.project-card {
     margin: 2rem 0;
     border: 0.2rem solid #FFA500;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     border-radius: 0.8rem;
-
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .project-card img{
@@ -175,7 +180,21 @@ header{
     border-radius: 0.8rem;
 }
 
-.project-links a{
-
-
+.project-links .btn:first-child{
+    margin-right: 0.5rem;
 }
+
+/*Section Contact*/
+.contact {
+    text-align: center;
+}
+
+.contactme{
+    margin: 2rem 0;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+    text-align: center;
+}
+
