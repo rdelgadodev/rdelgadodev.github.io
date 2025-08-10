@@ -29,6 +29,14 @@ section{
     margin: 0rem 0.5rem 10rem;
 }
 
+img{
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
 
 /* ---------------- Header ---------------- */
 header {
@@ -88,9 +96,6 @@ header {
     transform: translateX(0) !important;
 }
 
-.menu li {
-    list-style: none;
-}
 
 .menu a {
     color: #FFA500;
@@ -217,7 +222,12 @@ footer {
     text-align: center;
 }
 
+/* ---------------- Media Queries ----------------*/
 @media all and (min-width:800px){
+
+.logo img{
+    width: 100px;
+}
 
 .menu {
     position: static;
@@ -233,7 +243,7 @@ footer {
 }
 
 .menu a{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 1rem;
 }
 
@@ -274,8 +284,6 @@ h1, h2{
 
  @media all and (min-width:1000px){
  
-
-
 .hero-content {
     position: relative;
     display: flex;
@@ -288,7 +296,7 @@ h1, h2{
     position: absolute;
     width: 250px;
     top: 50%;
-    right: 15%;
+    right: 12.5%;
     transform: translate(50%, -50%);
     z-index: 10;
     background-color: #121212;
@@ -297,7 +305,7 @@ h1, h2{
 .hero-info{
     border: 0.2rem solid #FFA500;
     padding: 1rem;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -305,5 +313,116 @@ h1, h2{
     width: 60%;
     margin: 2rem auto;
 } 
+
+}
+
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+
+/* ---------------- WeekFoods ----------------*/
+
+/*Título e intro*/
+.section-main-title, .section-intro-text{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.section-intro-text{
+    width: 70%;
+}
+
+/*Secciones - Estilos generales*/
+
+.project-subsection, .db-section, .challenges-section, .tech-stack-section{
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #1A1A1A;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+/*Mismas características para todas las listas*/
+.list li{
+    background-color: #FFA500;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    color: #121212;
+    border-radius: 0.5rem;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+
+/*Cómo funciona*/
+.project-subsection--even{
+    flex-direction: row-reverse;
+}
+
+.feature-text-content h3, .project-subsection h3{
+    color:#FFA500;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+}
+
+.feature-text-content p{
+    margin: 0.8rem auto;
+
+}
+
+.subsection-intro-text{
+    margin: 2rem auto;
+}
+
+video{
+    width: 100%;
+    border: 0.2rem solid #FFA500;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+
+.feature-image{
+    border: 0.2rem solid #FFA500;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+/* ---------------- Media Queries ----------------*/
+@media all and (min-width:800px){
+
+    .content-wrapper{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .column {
+        flex: 1;
+    }
+}
+
+@media all and (min-width:1000px){
+/*Cómo funciona*/
+.project-subsection{
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.project-subsection div{
+    flex: 1;
+}
+
 
 }
