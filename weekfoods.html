@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>WeekFoods</title>
 </head>
+
 <body>
-<header>
-      <div class="logo">
+    <header>
+        <div class="logo">
             <a href="index.html"><img src="imgs/RDM_logo.png" alt="Logo de Raúl Delgado Molina"></a>
         </div>
-    <nav>
+        <nav>
             <ul class="menu">
                 <li><a href="#funcionamiento">Cómo funciona</a></li>
                 <li><a href="#estructura">Estructura</a></li>
@@ -21,177 +23,238 @@
         </nav>
         <button class="menu-toggle" data-menu-open="false"><span></span><span></span><span></span></button>
 
-</header>
-<main>
+    </header>
+    <main>
         <!-- Título e intro-->
         <section>
             <h1 class="section-main-title">WeekFoods: tu planificador semanal de menús</h1>
             <p class="section-intro-text">
-                La planificación de comidas puede ser un desafío, consumiendo tiempo y esfuerzo. WeekFoods simplifica este proceso, ayudándote a comer de forma saludable, variada y ajustada a tu presupuesto, todo ello desde una plataforma intuitiva y eficiente.
+                La planificación de comidas puede ser un desafío, consumiendo tiempo y esfuerzo. WeekFoods simplifica
+                este proceso, ayudándote a comer de forma saludable, variada y ajustada a tu presupuesto, todo ello
+                desde una plataforma intuitiva y eficiente.
             </p>
         </section>
-            <!-- Característica 1: Gestión de tus Recetas Personalizadas -->
-            <section id="funcionamiento">
-                <div class="title-section">
-                <span></span><h2>Cómo funciona</h2><span></span>
-                </div>
-                <div class="project-subsection project-subsection--odd">
-                
-                    <div class="feature-text-content">
-                        <h3>1. Gestión de tus recetas</h3>
-                        <p>
-                            En WeekFoods, tienes el control total sobre tu colección de recetas. Puedes añadir tus platos favoritos, tanto para comidas como para cenas, detallando sus ingredientes, calorías y el coste estimado. Esta biblioteca personal es la base de tus menús futuros.
-                        </p>
-                        <p class="feature-benefit-text"><strong>Beneficio</strong>: Construye tu propia biblioteca de platos favoritos que el sistema usará para elaborar tus menús, garantizando que siempre disfrutes de tus comidas preferidas.</p>
-                    </div>
-                    <div class="feature-image-wrapper">
-                        <img src="https://placehold.co/600x400/1a1a1a/FFA500?text=Captura+Recetas" alt="Captura de pantalla de la gestión de recetas" class="feature-image">
-                    </div>
-                </div>
-                
-                <!-- Característica 2: Generación Inteligente del Menú Semanal -->
-                 
-                <div class="project-subsection project-subsection--even">
-                    <div class="feature-text-content">
-                        <h3>2. Menú semanal</h3>
-                        <p>
-                            Olvídate de pensar qué cocinar cada día. Introduce tus preferencias de calorías máximas diarias y tu presupuesto máximo, y WeekFoods generará automáticamente un menú de 10 recetas (5 comidas y 5 cenas) para tu semana laboral, seleccionándolas de tu colección personal.
-                        </p>
-                        <p class="feature-benefit-text"><strong>Beneficio</strong>: Ahorra tiempo y esfuerzo en la planificación, obteniendo un menú que se ajusta perfectamente a tus objetivos nutricionales y económicos.</p>
-                    </div>
-                    <div class="feature-video-wrapper">
-                        <video width="95%" height="95%">
-                            <source src="imgs/Menu Semanal_s.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Característica 3: Personalización y Flexibilidad a tu Gusto -->
-                <div class="project-subsection project-subsection--odd">
-                    <div class="feature-text-content">
-                        <h3>3. Personalización y flexibilidad </h3>
-                        <p>
-                            ¿El menú generado no es exactamente lo que buscas? No hay problema. WeekFoods te da el control total. Puedes cambiar recetas específicas, seleccionar manualmente cualquier plato de tu lista para un día concreto, o incluso eliminar todo el menú para empezar de cero.
-                        </p>
-                        <p class="feature-benefit-text"><strong>Beneficio</strong>: Tienes el control total para ajustar el menú a tus preferencias y disponibilidad, garantizando que siempre disfrutes de lo que comes.</p>
-                    </div>
-                    <div class="feature-image-wrapper">
-                        <img src="https://placehold.co/600x400/1a1a1a/FFA500?text=Captura+Personalizar" alt="Captura de pantalla de la personalización del menú" class="feature-image">
-                    </div>
-                </div>
-                
-                <!-- Característica 4: Tu Lista de la Compra, Lista en Segundos -->
-                <div class="project-subsection project-subsection--even">
-                    <div class="feature-text-content">
-                        <h3>4. Lista de la compra</h3>
-                        <p>
-                            Una vez que tu menú semanal está perfecto, WeekFoods genera automáticamente una lista de la compra detallada con todos los ingredientes necesarios. ¡Para llevar en tu móvil!
-                        </p>
-                        <p class="feature-benefit-text"><strong>Beneficio</strong>: Simplifica tus compras, evita olvidos y reduce el desperdicio de alimentos, haciendo tu vida más fácil y eficiente.</p>
-                    </div>
-                    <div class="feature-image-list">
-                        <img src="imgs/01_lista_compra.png" alt="Captura de pantalla de la lista de la compra" class="feature-image">
 
-                    </div>
-                </div>
-            </section>
 
-            <!-- Sección: Estructura de la Base de Datos y Relaciones -->
-           <section id="estructura">
-             <div class="title-section">
-                <span></span><h2>Estructura</h2><span></span>
-                </div>
-             <div class="db-section">
-                 <h3 class="subsection-title">Estructura de la base de datos y relaciones</h3>
-                 <p class="subsection-intro-text">La robustez de WeekFoods se basa en un diseño de base de datos relacional, gestionado eficientemente por el ORM de Django. Los modelos clave y sus interconexiones son:</p>
-                 <div class="content-wrapper">
-                     <div class="column">
-                         <h4>Modelos principales:</h4>
-                         <ul class="list">
-                             <li><strong>User:</strong> El modelo de usuario estándar de Django para la autenticación.</li>
-                             <li><strong>UserWeekfoods:</strong> Extiende el modelo User, actuando como perfil de usuario y gestionando la relación de muchas a muchas con las recetas que cada usuario posee.</li>
-                             <li><strong>Recipe:</strong> Almacena los detalles de cada receta (nombre, elaboración, calorías, momento del día).</li>
-                             <li><strong>Ingredient:</strong> Contiene la información de cada ingrediente (nombre, tipo, precio).</li>
-                             <li><strong>WeeklyMenu:</strong> Relaciona un usuario con las 10 recetas específicas que componen su menú semanal generado o guardado.</li>
-                         </ul>
-                     </div>
-                     <div class="column">
-                         <h4>Relaciones:</h4>
-                         <ul class="list">
-                             <li><strong>User &harr; UserWeekfoods:</strong> Relación One-to-One (un usuario tiene un perfil Weekfoods).</li>
-                             <li><strong>UserWeekfoods &harr; Recipe:</strong> Relación Many-to-Many (un usuario puede tener muchas recetas, y una receta puede pertenecer a muchos usuarios).</li>
-                             <li><strong>Recipe &harr; Ingredient:</strong> Relación Many-to-Many (una receta tiene muchos ingredientes, y un ingrediente puede estar en muchas recetas).</li>
-                             <li><strong>UserWeekfoods &harr; WeeklyMenu &harr; Recipe:</strong> Relación Many-to-Many a través de WeeklyMenu, que actúa como un modelo intermedio para almacenar el menú semanal específico de un usuario.</li>
-                         </ul>
-                     </div>
-                 </div>
+        <!-- Característica 1: Generación Inteligente del Menú Semanal -->
+        <section id="funcionamiento">
+            <div class="title-section">
+                <span></span>
+                <h2>Cómo funciona</h2><span></span>
             </div>
-           </section>
+            <div class="project-subsection project-subsection--odd">
+                <div class="feature-text-content">
+                    <h3>1. Menú semanal</h3>
+                    <p>
+                        Olvídate de pensar qué cocinar cada día. Introduce tus preferencias de calorías máximas diarias
+                        y tu presupuesto máximo, y WeekFoods generará automáticamente un menú de 10 recetas (5 comidas y
+                        5 cenas) para tu semana laboral, seleccionándolas de tu colección personal.
+                    </p>
+                    <p class="feature-benefit-text"><strong>Beneficio</strong>: Ahorra tiempo y esfuerzo en la
+                        planificación, obteniendo un menú que se ajusta perfectamente a tus objetivos nutricionales y
+                        económicos.</p>
+                </div>
+                <div class="feature-video-wrapper">
+                    <video width="95%" height="95%" class="feature-image" controls>
+                        <source src="imgs/MS.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
 
-            <!-- Sección: Desafíos y Aprendizajes Clave -->
-            <section id="desafios">
-                 <div class="title-section">
-                <span></span><h2>Desafíos y aprendizaje</h2><span></span>
+            <!-- Característica 2: Personalización y Flexibilidad a tu Gusto -->
+            <div class="project-subsection project-subsection--even">
+                <div class="feature-text-content">
+                    <h3>2. Personalización y flexibilidad </h3>
+                    <p>
+                        ¿El menú generado no es exactamente lo que buscas? No hay problema. WeekFoods te da el control
+                        total. Puedes cambiar recetas específicas, seleccionar manualmente cualquier plato de tu lista
+                        para un día concreto, o incluso eliminar todo el menú para empezar de cero.
+                    </p>
+                    <p class="feature-benefit-text"><strong>Beneficio</strong>: Tienes el control total para ajustar el
+                        menú a tus preferencias y disponibilidad, garantizando que siempre disfrutes de lo que comes.
+                    </p>
                 </div>
-                <div class="challenges-section">
-                    <h3 class="subsection-title">Desafíos y aprendizajes</h3>
-                    <p class="subsection-intro-text">El desarrollo de WeekFoods presentó varios retos que fueron oportunidades de aprendizaje:</p>
-                    <div class="content-wrapper">
-                        <div class="column">
-                            <h4>Retos superados:</h4>
-                            <ul class="list">
-                                <li><strong>Gestión de relaciones Many-to-Many:</strong> Implementar correctamente las relaciones entre usuarios y recetas, y entre recetas e ingredientes, asegurando la integridad de los datos.</li>
-                                <li><strong>Lógica de filtrado compleja:</strong> Desarrollar un algoritmo eficiente para generar menús aleatorios que cumplan múltiples criterios (calorías, presupuesto) y que se adapten a la disponibilidad de recetas del usuario.</li>
-                                <li><strong>Formularios dinámicos y validación:</strong> Manejar la creación y edición de recetas e ingredientes con formularios de Django, incluyendo validaciones personalizadas (ej. unicidad de ingredientes, formato de URLs de YouTube).</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <h4>Aprendizajes:</h4>
-                            <ul class="list">
-                                <li><strong>Uso avanzado de vistas basadas en clases (CBV):</strong> Optimizar el código y la estructura de las vistas para manejar diferentes tipos de peticiones (GET, POST) y acciones (crear, eliminar, listar).</li>
-                                <li><strong>Gestión de sesiones y mensajes:</strong> Utilizar el framework de mensajes de Django para proporcionar feedback claro al usuario y la sesión para mantener estados temporales (como los checkboxes marcados).</li>
-                                <li><strong>Diseño responsivo y UX:</strong> La importancia de un diseño adaptable y una interfaz intuitiva para mejorar la experiencia del usuario, especialmente en la planificación del menú.</li>
-                            </ul>
-                        </div>
+                <div class="feature-image-wrapper">
+                    <video width="95%" height="95%" class="feature-image" controls>
+                        <source src="imgs/Flexibilidad.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Característica 3: Gestión de tus Recetas Personalizadas -->
+
+            <div class="project-subsection project-subsection--odd">
+
+                <div class="feature-text-content">
+                    <h3>3. Gestión de tus recetas</h3>
+                    <p>
+                        En WeekFoods, tienes el control total sobre tu colección de recetas. Puedes añadir tus platos
+                        favoritos, tanto para comidas como para cenas, detallando sus ingredientes, calorías y el coste
+                        estimado. Esta biblioteca personal es la base de tus menús futuros.
+                    </p>
+                    <p class="feature-benefit-text"><strong>Beneficio</strong>: Construye tu propia biblioteca de platos
+                        favoritos que el sistema usará para elaborar tus menús, garantizando que siempre disfrutes de
+                        tus comidas preferidas.</p>
+                </div>
+                <div class="feature-image-wrapper">
+                    <img src="https://placehold.co/600x400/1a1a1a/FFA500?text=Captura+Recetas"
+                        alt="Captura de pantalla de la gestión de recetas" class="feature-image">
+                </div>
+            </div>
+
+
+            <!-- Característica 4: Tu Lista de la Compra, Lista en Segundos -->
+            <div class="project-subsection project-subsection--even">
+                <div class="feature-text-content">
+                    <h3>4. Lista de la compra</h3>
+                    <p>
+                        Una vez que tu menú semanal está perfecto, WeekFoods genera automáticamente una lista de la
+                        compra detallada con todos los ingredientes necesarios. ¡Para llevar en tu móvil!
+                    </p>
+                    <p class="feature-benefit-text"><strong>Beneficio</strong>: Simplifica tus compras, evita olvidos y
+                        reduce el desperdicio de alimentos, haciendo tu vida más fácil y eficiente.</p>
+                </div>
+                <div class="feature-image-list">
+                    <img src="imgs/01_lista_compra.png" alt="Captura de pantalla de la lista de la compra"
+                        class="feature-image">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Estructura de la Base de Datos y Relaciones -->
+        <section id="estructura">
+            <div class="title-section">
+                <span></span>
+                <h2>Estructura</h2><span></span>
+            </div>
+            <div class="db-section">
+                <h3 class="subsection-title">Estructura de la base de datos y relaciones</h3>
+                <p class="subsection-intro-text">La robustez de WeekFoods se basa en un diseño de base de datos
+                    relacional, gestionado eficientemente por el ORM de Django. Los modelos clave y sus interconexiones
+                    son:</p>
+                <div class="content-wrapper">
+                    <div class="column">
+                        <h4>Modelos principales:</h4>
+                        <ul class="list">
+                            <li><strong>User:</strong> El modelo de usuario estándar de Django para la autenticación.
+                            </li>
+                            <li><strong>UserWeekfoods:</strong> Extiende el modelo User, actuando como perfil de usuario
+                                y gestionando la relación de muchas a muchas con las recetas que cada usuario posee.
+                            </li>
+                            <li><strong>Recipe:</strong> Almacena los detalles de cada receta (nombre, elaboración,
+                                calorías, momento del día).</li>
+                            <li><strong>Ingredient:</strong> Contiene la información de cada ingrediente (nombre, tipo,
+                                precio).</li>
+                            <li><strong>WeeklyMenu:</strong> Relaciona un usuario con las 10 recetas específicas que
+                                componen su menú semanal generado o guardado.</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Relaciones:</h4>
+                        <ul class="list">
+                            <li><strong>User &harr; UserWeekfoods:</strong> Relación One-to-One (un usuario tiene un
+                                perfil Weekfoods).</li>
+                            <li><strong>UserWeekfoods &harr; Recipe:</strong> Relación Many-to-Many (un usuario puede
+                                tener muchas recetas, y una receta puede pertenecer a muchos usuarios).</li>
+                            <li><strong>Recipe &harr; Ingredient:</strong> Relación Many-to-Many (una receta tiene
+                                muchos ingredientes, y un ingrediente puede estar en muchas recetas).</li>
+                            <li><strong>UserWeekfoods &harr; WeeklyMenu &harr; Recipe:</strong> Relación Many-to-Many a
+                                través de WeeklyMenu, que actúa como un modelo intermedio para almacenar el menú semanal
+                                específico de un usuario.</li>
+                        </ul>
                     </div>
                 </div>
-                
-            </section>
-            <!-- Sección de Tecnologías Utilizadas -->
-            <section id="tecnologias">
-                <div class="title-section">
-                <span></span><h2>Tecnologías</h2><span></span>
-                </div>
-                <div class="tech-stack-section">
-                    <h3 class="subsection-title">Tecnologías detrás de WeekFoods</h3>
-                    <p class="subsection-intro-text">WeekFoods está construido con tecnologías modernas y robustas para ofrecerte la mejor experiencia:</p>
-                    <div class="content-wrapper">
-                        <div class="column">
-                            <h4>Backend y base de datos:</h4>
-                            <ul class="list">
-                                <li><strong>Python:</strong> Lenguaje de programación principal, conocido por su legibilidad y versatilidad.</li>
-                                <li><strong>Django:</strong> Framework web de Python, elegido por su "baterías incluidas" que acelera el desarrollo, su ORM robusto y su panel de administración integrado.</li>
-                                <li><strong>PostgreSQL:</strong> Base de datos relacional potente y fiable, ideal para aplicaciones escalables.</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <h4>Frontend y herramientas:</h4>
-                            <ul class="list">
-                                <li><strong>HTML5:</strong> Para la estructura y contenido de la web.</li>
-                                <li><strong>CSS3:</strong> Para el diseño y la estética, permitiendo una interfaz moderna y atractiva.</li>
-                                <li><strong>JavaScript:</strong> Interactividad del lado del cliente para el buscador de ingredientes.</li>
-                                <li><strong>Bootstrap:</strong> Framework CSS para un diseño responsivo rápido y consistente.</li>
-                            </ul>
-                        </div>
+            </div>
+        </section>
+
+        <!-- Sección: Desafíos y Aprendizajes Clave -->
+        <section id="desafios">
+            <div class="title-section">
+                <span></span>
+                <h2>Desafíos y aprendizaje</h2><span></span>
+            </div>
+            <div class="challenges-section">
+                <h3 class="subsection-title">Desafíos y aprendizajes</h3>
+                <p class="subsection-intro-text">El desarrollo de WeekFoods presentó varios retos que fueron
+                    oportunidades de aprendizaje:</p>
+                <div class="content-wrapper">
+                    <div class="column">
+                        <h4>Retos superados:</h4>
+                        <ul class="list">
+                            <li><strong>Gestión de relaciones Many-to-Many:</strong> Implementar correctamente las
+                                relaciones entre usuarios y recetas, y entre recetas e ingredientes, asegurando la
+                                integridad de los datos.</li>
+                            <li><strong>Lógica de filtrado compleja:</strong> Desarrollar un algoritmo eficiente para
+                                generar menús aleatorios que cumplan múltiples criterios (calorías, presupuesto) y que
+                                se adapten a la disponibilidad de recetas del usuario.</li>
+                            <li><strong>Formularios dinámicos y validación:</strong> Manejar la creación y edición de
+                                recetas e ingredientes con formularios de Django, incluyendo validaciones personalizadas
+                                (ej. unicidad de ingredientes, formato de URLs de YouTube).</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Aprendizajes:</h4>
+                        <ul class="list">
+                            <li><strong>Uso avanzado de vistas basadas en clases (CBV):</strong> Optimizar el código y
+                                la estructura de las vistas para manejar diferentes tipos de peticiones (GET, POST) y
+                                acciones (crear, eliminar, listar).</li>
+                            <li><strong>Gestión de sesiones y mensajes:</strong> Utilizar el framework de mensajes de
+                                Django para proporcionar feedback claro al usuario y la sesión para mantener estados
+                                temporales (como los checkboxes marcados).</li>
+                            <li><strong>Diseño responsivo y UX:</strong> La importancia de un diseño adaptable y una
+                                interfaz intuitiva para mejorar la experiencia del usuario, especialmente en la
+                                planificación del menú.</li>
+                        </ul>
                     </div>
                 </div>
-                
-            </section>
-        
+            </div>
+
+        </section>
+        <!-- Sección de Tecnologías Utilizadas -->
+        <section id="tecnologias">
+            <div class="title-section">
+                <span></span>
+                <h2>Tecnologías</h2><span></span>
+            </div>
+            <div class="tech-stack-section">
+                <h3 class="subsection-title">Tecnologías detrás de WeekFoods</h3>
+                <p class="subsection-intro-text">WeekFoods está construido con tecnologías modernas y robustas para
+                    ofrecerte la mejor experiencia:</p>
+                <div class="content-wrapper">
+                    <div class="column">
+                        <h4>Backend y base de datos:</h4>
+                        <ul class="list">
+                            <li><strong>Python:</strong> Lenguaje de programación principal, conocido por su legibilidad
+                                y versatilidad.</li>
+                            <li><strong>Django:</strong> Framework web de Python, elegido por su "baterías incluidas"
+                                que acelera el desarrollo, su ORM robusto y su panel de administración integrado.</li>
+                            <li><strong>PostgreSQL:</strong> Base de datos relacional potente y fiable, ideal para
+                                aplicaciones escalables.</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Frontend y herramientas:</h4>
+                        <ul class="list">
+                            <li><strong>HTML5:</strong> Para la estructura y contenido de la web.</li>
+                            <li><strong>CSS3:</strong> Para el diseño y la estética, permitiendo una interfaz moderna y
+                                atractiva.</li>
+                            <li><strong>JavaScript:</strong> Interactividad del lado del cliente para el buscador de
+                                ingredientes.</li>
+                            <li><strong>Bootstrap:</strong> Framework CSS para un diseño responsivo rápido y
+                                consistente.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
     <footer>
         <p>&copy; 2025 Raúl Delgado Molina. Todos los derechos reservados.</p>
-    </footer> 
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
